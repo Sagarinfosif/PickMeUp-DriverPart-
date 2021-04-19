@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Are you sure, you want to cancel your ride"
+        android:textSize="@dimen/space20"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_marginTop="@dimen/space30"
+        android:layout_marginBottom="@dimen/space30"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:weightSum="2">
+
+
+
+        <TextView
+            android:layout_width="@dimen/space0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Yes"
+            android:id="@+id/yesText"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text20"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:layout_width="@dimen/space0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="No"
+            android:id="@+id/noText"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text20" />
+
+    </LinearLayout>
+
+</LinearLayout>

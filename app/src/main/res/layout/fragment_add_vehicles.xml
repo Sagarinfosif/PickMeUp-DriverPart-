@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TruckModule.Activity.Fragment.VehiclesDetailFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/topbar1"
+        />
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/include"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/text10"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="@dimen/space150"
+                android:layout_height="@dimen/space150"
+                android:layout_marginHorizontal="@dimen/space30"
+                android:elevation="@dimen/space5"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/veh_img"
+                    android:background="@drawable/vehicle_bg"
+                    android:src="@drawable/ic_bike"
+                    android:padding="@dimen/space20"
+                    app:tint="@color/white" />
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_vehicle_new"
+                    app:riv_corner_radius="@dimen/space15"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="@dimen/space1"
+                    android:visibility="gone"
+                    android:padding="@dimen/space20"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lay_vehicle_bg"
+                android:layout_marginTop="-50dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pushbikes Details"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/ic_baseline_arrow_drop_down_circle_24"
+                    android:drawableTint="@color/black"
+                    android:textSize="@dimen/text14"
+                    android:drawablePadding="@dimen/space10"
+                    android:gravity="center"
+                    android:id="@+id/push_bike"
+                    android:layout_marginHorizontal="@dimen/space5"
+                    android:layout_marginVertical="@dimen/space10"
+
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/push_bike"
+                    android:layout_marginHorizontal="@dimen/space5"
+                    android:layout_marginTop="@dimen/space20"
+                    android:layout_marginBottom="@dimen/space5"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicle Name"
+                        android:id="@+id/txt_veh_name"
+                        android:background="@drawable/veh_details_bg"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:padding="@dimen/space10"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Color"
+                            android:layout_weight="0.5"
+                            android:id="@+id/txt_veh_color"
+                            android:layout_marginHorizontal="@dimen/space10"
+                            android:background="@drawable/veh_details_bg"
+                            android:padding="@dimen/space10"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Model"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_model"
+                            android:textStyle="bold"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/veh_details_bg"
+                            android:padding="@dimen/space10"
+                            android:layout_marginHorizontal="@dimen/space10"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Load Capacity"
+
+                            android:layout_weight="0.5"
+                            android:layout_marginHorizontal="@dimen/space10"
+                            android:background="@drawable/veh_details_bg"
+                            android:padding="@dimen/space10"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Year"
+                            android:id="@+id/txt_veh_year"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/veh_details_bg"
+                            android:padding="@dimen/space10"
+                            android:layout_marginHorizontal="@dimen/space10"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registration_certificate"
+                        android:id="@+id/reg_certificate"
+                        android:background="@drawable/veh_details_bg"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:padding="@dimen/space10"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insurance_certificate"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:id="@+id/txt_insurance"
+                        android:background="@drawable/veh_details_bg"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:padding="@dimen/space10"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registration_number"
+                        android:id="@+id/txt_reg_number"
+                        android:background="@drawable/veh_details_bg"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:padding="@dimen/space10"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/certificate_of_inspect"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:id="@+id/txt_certificate"
+                        android:background="@drawable/veh_details_bg"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:padding="@dimen/space10"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:id="@+id/btn_remove"
+                android:layout_marginHorizontal="@dimen/space50"
+                android:layout_marginTop="@dimen/space20"
+                android:background="@drawable/button_account_bg"
+                android:textColor="@color/white"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space50"
+                android:layout_marginVertical="@dimen/space10"
+                android:id="@+id/btn_done"
+                android:text="Done"
+                android:background="@drawable/button_account_bg"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

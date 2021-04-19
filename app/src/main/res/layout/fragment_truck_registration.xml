@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TruckRegistrationFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space20"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/space150"
+                android:layout_height="@dimen/space150"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space20"
+                android:src="@drawable/dsfdsfsfd" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Select your Vehicle Type" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:paddingTop="@dimen/space8"
+                android:paddingBottom="@dimen/space8">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/truckType"
+                    android:paddingLeft="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Driver Experience In Years" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="3 Years"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="@string/picture_of_national_id_front_back" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Picture of driver's license" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Vehicle Registration Certificate" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Certificate of Charcter" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Authorization letter (if applicable)" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Picture of insurance for vehicle" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Picture of inspection sticker" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Picture of vehicle (front, back, side, interior)" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/skyblue"
+                    android:hint="Pdf"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="@dimen/space15"
+                    android:src="@drawable/ic_baseline_add_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Insurance Details" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="Insurance done on 10/02/2021"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Any License Suspensions in Last 12 Months" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="No"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Input license plate number" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="12"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Any Criminal Activity in Last 24 Months" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="No"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="TARE Compliance Certification" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:background="@drawable/edt_back"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="No"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/space15"
+                    android:paddingTop="@dimen/space10"
+                    android:paddingBottom="@dimen/space10"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Password" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@drawable/edt_back"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="@dimen/space10"
+                android:drawableTint="@color/skyblue"
+                android:paddingLeft="@dimen/space15"
+                android:paddingTop="@dimen/space10"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/space10"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="@string/by_signing_up_i_agree_to_the_terms_of_condition"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/textWhitGray16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/space20"
+                android:background="@drawable/btn_bac"
+                android:text="Sign Up"
+                android:id="@+id/btnSave"
+                android:layout_marginHorizontal="@dimen/space20"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already Have an Account?"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textColor="@color/skyblue"
+                        style="@style/textBalck14sp"
+                        android:padding="@dimen/space5"
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

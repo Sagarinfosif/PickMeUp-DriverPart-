@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space10"
+            android:background="@drawable/right_round_bg"
+            android:orientation="horizontal"
+            android:layout_weight="0.7"
+            android:paddingHorizontal="@dimen/space15"
+            android:paddingVertical="@dimen/space10">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/space24"
+                    android:layout_height="@dimen/space24"
+                    android:id="@+id/img_setting"
+                    android:layout_marginHorizontal="@dimen/space5"
+                    android:src="@drawable/ic_baseline_person_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/txt_settings"
+                    android:layout_toRightOf="@id/img_setting"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:textSize="@dimen/text16"
+                    android:gravity="center_vertical"
+                    android:text="Update Profile"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_bg"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        -->
+    <!--        android:src="@drawable/ic_baseline_navigation_24"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:layout_marginHorizontal="@dimen/space10"-->
+    <!--        app:tint="@color/app_color" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/navigation"-->
+    <!--        android:layout_margin="@dimen/space10"-->
+    <!--        android:padding="@dimen/space5"-->
+    <!--        android:layout_toRightOf="@id/img_setting"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        -->
+    <!--        android:textColor="@color/black" />-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/ic_baseline_chevron_right_24"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        app:tint="@color/black" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/navigation"-->
+    <!--        android:textSize="@dimen/sp_14"-->
+    <!--        android:id="@+id/txt_settings"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:layout_margin="@dimen/space10"/>-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="@dimen/dp24"-->
+    <!--        android:layout_height="@dimen/dp24"-->
+    <!--        android:id="@+id/img_settings"-->
+    <!--        android:src="@drawable/ic_baseline_navigation_24"-->
+    <!--        android:layout_toLeftOf="@id/txt_settings"/>-->
+</RelativeLayout>

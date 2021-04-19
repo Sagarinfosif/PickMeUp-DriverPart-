@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/fare_hotspot"
+            android:title="Fare Hotspot Map"
+          />
+        <item
+            android:id="@+id/trip_hotspot_map"
+            android:title="Trip Hotspot Map"/>
+        <item
+            android:id="@+id/traffic"
+            android:title="Traffic"
+            android:icon="@drawable/ic_traffic_light"/>
+    <item
+        android:id="@+id/request_test"
+        android:title="Request Test"/>
+    <item
+        android:id="@+id/trip_setting"
+        android:title="Trip Setting"
+        android:icon="@drawable/ic_popup_settings"/>
+    </menu>

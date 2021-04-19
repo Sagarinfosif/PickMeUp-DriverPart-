@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.drive.pickmeup.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_myVehicleFragment"
+            app:destination="@id/myVehicleFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileMinorFragment"
+            app:destination="@id/profileMinorFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_rewardTabFragment"
+            app:destination="@id/rewardTabFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tripCheckFragment"
+            app:destination="@id/tripCheckFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allDocumentUploadFragment"
+            app:destination="@id/allDocumentUploadFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_earningFragment"
+            app:destination="@id/earningFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drivePartnerFragment"
+            app:destination="@id/drivePartnerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rideAcceptFragment"
+            app:destination="@id/rideAcceptFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_inboxFragment"
+            app:destination="@id/inboxFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountDetailFragment"
+            app:destination="@id/accountDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_activeServiceFragment"
+            app:destination="@id/activeServiceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tripSettingFragment"
+            app:destination="@id/tripSettingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drivingHoursFragment"
+            app:destination="@id/drivingHoursFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myVehicleFragment"
+        android:name="com.drive.pickmeup.fragments.MyVehicleFragment"
+        android:label="fragment_my_vehicle"
+        tools:layout="@layout/fragment_my_vehicle" >
+        <action
+            android:id="@+id/action_myVehicleFragment_to_addVehicleFragment"
+            app:destination="@id/addVehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.drive.pickmeup.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.drive.pickmeup.fragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_updateNumberFragment"
+            app:destination="@id/updateNumberFragment" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_updateEmailFragment"
+            app:destination="@id/updateEmailFragment" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_updatePasswordFragment"
+            app:destination="@id/updatePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateNumberFragment"
+        android:name="com.drive.pickmeup.fragments.UpdateNumberFragment"
+        android:label="fragment_update_number"
+        tools:layout="@layout/fragment_update_number" >
+        <action
+            android:id="@+id/action_updateNumberFragment_to_confirmNumberOtpFragment"
+            app:destination="@id/confirmNumberOtpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateEmailFragment"
+        android:name="com.drive.pickmeup.fragments.UpdateEmailFragment"
+        android:label="fragment_update_email"
+        tools:layout="@layout/fragment_update_email" >
+        <action
+            android:id="@+id/action_updateEmailFragment_to_confirmNumberOtpFragment"
+            app:destination="@id/confirmNumberOtpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmNumberOtpFragment"
+        android:name="com.drive.pickmeup.fragments.ConfirmNumberOtpFragment"
+        android:label="fragment_confirm_number_otp"
+        tools:layout="@layout/fragment_confirm_number_otp" >
+        <action
+            android:id="@+id/action_confirmNumberOtpFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.drive.pickmeup.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileMinorFragment"
+        android:name="com.drive.pickmeup.fragments.ProfileMinorFragment"
+        android:label="fragment_profile_minor"
+        tools:layout="@layout/fragment_profile_minor" >
+        <action
+            android:id="@+id/action_profileMinorFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.drive.pickmeup.fragments.help.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_safetyRelatedFragment"
+            app:destination="@id/safetyRelatedFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_allTripFragment"
+            app:destination="@id/allTripFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_tripIssueandAdjustmentFragment"
+            app:destination="@id/tripIssueandAdjustmentFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_usingTheAppFragment"
+            app:destination="@id/usingTheAppFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_accountAndPaymentFragment"
+            app:destination="@id/accountAndPaymentFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_moreHelpFragment"
+            app:destination="@id/moreHelpFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_trackingAndCancelFragment"
+            app:destination="@id/trackingAndCancelFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_uploadingDocumentFragment"
+            app:destination="@id/uploadingDocumentFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_updatingAccountFragment"
+            app:destination="@id/updatingAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/safetyRelatedFragment"
+        android:name="com.drive.pickmeup.fragments.help.SafetyRelatedFragment"
+        android:label="fragment_safety_related"
+        tools:layout="@layout/fragment_safety_related" />
+    <fragment
+        android:id="@+id/rewardTabFragment"
+        android:name="com.drive.pickmeup.fragments.tab.RewardTabFragment"
+        android:label="fragment_reward_tab"
+        tools:layout="@layout/fragment_reward_tab" />
+    <fragment
+        android:id="@+id/updatePasswordFragment"
+        android:name="com.drive.pickmeup.fragments.UpdatePasswordFragment"
+        android:label="fragment_update_password"
+        tools:layout="@layout/fragment_update_password" >
+        <action
+            android:id="@+id/action_updatePasswordFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripCheckFragment"
+        android:name="com.drive.pickmeup.fragments.TripCheckFragment"
+        android:label="fragment_trip_check"
+        tools:layout="@layout/fragment_trip_check" />
+    <fragment
+        android:id="@+id/allTripFragment"
+        android:name="com.drive.pickmeup.fragments.AllTripFragment"
+        android:label="fragment_all_trip"
+        tools:layout="@layout/fragment_all_trip" >
+        <action
+            android:id="@+id/action_allTripFragment_to_tripDetailFragment"
+            app:destination="@id/tripDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripDetailFragment"
+        android:name="com.drive.pickmeup.fragments.TripDetailFragment"
+        android:label="fragment_trip_detail"
+        tools:layout="@layout/fragment_trip_detail" >
+        <action
+            android:id="@+id/action_tripDetailFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.drive.pickmeup.fragments.NavigationFragment"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" />
+    <fragment
+        android:id="@+id/tripIssueandAdjustmentFragment"
+        android:name="com.drive.pickmeup.fragments.help.TripIssueandAdjustmentFragment"
+        android:label="fragment_trip_issueand_adjustment"
+        tools:layout="@layout/fragment_trip_issueand_adjustment" />
+    <fragment
+        android:id="@+id/usingTheAppFragment"
+        android:name="com.drive.pickmeup.fragments.help.UsingTheAppFragment"
+        android:label="fragment_using_the_app"
+        tools:layout="@layout/fragment_using_the_app" />
+    <fragment
+        android:id="@+id/accountAndPaymentFragment"
+        android:name="com.drive.pickmeup.fragments.help.AccountAndPaymentFragment"
+        android:label="fragment_account_and_payment"
+        tools:layout="@layout/fragment_account_and_payment" />
+    <fragment
+        android:id="@+id/moreHelpFragment"
+        android:name="com.drive.pickmeup.fragments.help.MoreHelpFragment"
+        android:label="fragment_more_help"
+        tools:layout="@layout/fragment_more_help" />
+    <fragment
+        android:id="@+id/trackingAndCancelFragment"
+        android:name="com.drive.pickmeup.fragments.help.TrackingAndCancelFragment"
+        android:label="fragment_tracking_and_cancel"
+        tools:layout="@layout/fragment_tracking_and_cancel" />
+    <fragment
+        android:id="@+id/uploadingDocumentFragment"
+        android:name="com.drive.pickmeup.fragments.help.UploadingDocumentFragment"
+        android:label="fragment_uploading_document"
+        tools:layout="@layout/fragment_uploading_document" />
+    <fragment
+        android:id="@+id/updatingAccountFragment"
+        android:name="com.drive.pickmeup.fragments.help.UpdatingAccountFragment"
+        android:label="fragment_updating_account"
+        tools:layout="@layout/fragment_updating_account" />
+    <fragment
+        android:id="@+id/addVehicleFragment"
+        android:name="com.drive.pickmeup.fragments.AddVehicleFragment"
+        android:label="fragment_add_vehicle"
+        tools:layout="@layout/fragment_add_vehicle" >
+        <action
+            android:id="@+id/action_addVehicleFragment_to_vehicleDocumentFragment"
+            app:destination="@id/vehicleDocumentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleDocumentFragment"
+        android:name="com.drive.pickmeup.fragments.VehicleDocumentFragment"
+        android:label="fragment_vehicle_document"
+        tools:layout="@layout/fragment_vehicle_document" >
+        <action
+            android:id="@+id/action_vehicleDocumentFragment_to_myVehicleFragment"
+            app:destination="@id/myVehicleFragment" />
+        <action
+            android:id="@+id/action_vehicleDocumentFragment_to_vehicleInsuranceFragment"
+            app:destination="@id/vehicleInsuranceFragment" />
+        <action
+            android:id="@+id/action_vehicleDocumentFragment_to_registrationCertificateFragment"
+            app:destination="@id/registrationCertificateFragment" />
+        <action
+            android:id="@+id/action_vehicleDocumentFragment_to_inspectionCertificateFragment"
+            app:destination="@id/inspectionCertificateFragment" />
+        <action
+            android:id="@+id/action_vehicleDocumentFragment_to_bookedHireServiceFragment"
+            app:destination="@id/bookedHireServiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleInsuranceFragment"
+        android:name="com.drive.pickmeup.fragments.VehicleInsuranceFragment"
+        android:label="fragment_vehicle_insurance"
+        tools:layout="@layout/fragment_vehicle_insurance" />
+    <fragment
+        android:id="@+id/registrationCertificateFragment"
+        android:name="com.drive.pickmeup.fragments.RegistrationCertificateFragment"
+        android:label="fragment_registration_certificate"
+        tools:layout="@layout/fragment_registration_certificate" />
+    <fragment
+        android:id="@+id/inspectionCertificateFragment"
+        android:name="com.drive.pickmeup.fragments.InspectionCertificateFragment"
+        android:label="fragment_inspection_certificate"
+        tools:layout="@layout/fragment_inspection_certificate" />
+    <fragment
+        android:id="@+id/bookedHireServiceFragment"
+        android:name="com.drive.pickmeup.fragments.BookedHireServiceFragment"
+        android:label="fragment_booked_hire_service"
+        tools:layout="@layout/fragment_booked_hire_service" />
+    <fragment
+        android:id="@+id/allDocumentUploadFragment"
+        android:name="com.drive.pickmeup.fragments.AllDocumentUploadFragment"
+        android:label="fragment_all_document_upload"
+        tools:layout="@layout/fragment_all_document_upload" />
+    <fragment
+        android:id="@+id/earningFragment"
+        android:name="com.drive.pickmeup.fragments.EarningFragment"
+        android:label="fragment_earning"
+        tools:layout="@layout/fragment_earning" >
+        <action
+            android:id="@+id/action_earningFragment_to_allTripFragment"
+            app:destination="@id/allTripFragment" />
+        <action
+            android:id="@+id/action_earningFragment_to_rewardTabFragment"
+            app:destination="@id/rewardTabFragment" />
+        <action
+            android:id="@+id/action_earningFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment" />
+        <action
+            android:id="@+id/action_earningFragment_to_accountDetailFragment"
+            app:destination="@id/accountDetailFragment" />
+        <action
+            android:id="@+id/action_earningFragment_to_referRewardFragment"
+            app:destination="@id/referRewardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.drive.pickmeup.fragments.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" >
+        <action
+            android:id="@+id/action_balanceFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drivePartnerFragment"
+        android:name="com.drive.pickmeup.fragments.DrivePartnerFragment"
+        android:label="fragment_drive_partner"
+        tools:layout="@layout/fragment_drive_partner" >
+        <action
+            android:id="@+id/action_drivePartnerFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rideAcceptFragment"
+        android:name="com.drive.pickmeup.fragments.RideAcceptFragment"
+        android:label="fragment_ride_accept"
+        tools:layout="@layout/fragment_ride_accept" >
+        <action
+            android:id="@+id/action_rideAcceptFragment_to_destinationFragment"
+            app:destination="@id/destinationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.drive.pickmeup.fragments.DestinationFragment"
+        android:label="fragment_destination"
+        tools:layout="@layout/fragment_destination" >
+        <action
+            android:id="@+id/action_destinationFragment_to_userGoDestinationFragment"
+            app:destination="@id/userGoDestinationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userGoDestinationFragment"
+        android:name="com.drive.pickmeup.fragments.UserGoDestinationFragment"
+        android:label="fragment_user_go_destination"
+        tools:layout="@layout/fragment_user_go_destination" >
+        <action
+            android:id="@+id/action_userGoDestinationFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.drive.pickmeup.fragments.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/accountDetailFragment"
+        android:name="com.drive.pickmeup.fragments.AccountDetailFragment"
+        android:label="fragment_account_detail"
+        tools:layout="@layout/fragment_account_detail" />
+    <fragment
+        android:id="@+id/activeServiceFragment"
+        android:name="com.drive.pickmeup.fragments.ActiveServiceFragment"
+        android:label="fragment_active_service"
+        tools:layout="@layout/fragment_active_service" />
+    <fragment
+        android:id="@+id/referRewardFragment"
+        android:name="com.drive.pickmeup.fragments.refertab.ReferRewardFragment"
+        android:label="fragment_refer_reward"
+        tools:layout="@layout/fragment_refer_reward" />
+    <fragment
+        android:id="@+id/tripSettingFragment"
+        android:name="com.drive.pickmeup.fragments.TripSettingFragment"
+        android:label="fragment_trip_setting"
+        tools:layout="@layout/fragment_trip_setting" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.drive.pickmeup.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_completeDocumentFragment"
+            app:destination="@id/completeDocumentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/completeDocumentFragment"
+        android:name="com.drive.pickmeup.fragments.CompleteDocumentFragment"
+        android:label="fragment_complete_document"
+        tools:layout="@layout/fragment_complete_document" />
+    <fragment
+        android:id="@+id/drivingHoursFragment"
+        android:name="com.drive.pickmeup.fragments.DrivingHoursFragment"
+        android:label="fragment_driving_hours"
+        tools:layout="@layout/fragment_driving_hours" />
+</navigation>

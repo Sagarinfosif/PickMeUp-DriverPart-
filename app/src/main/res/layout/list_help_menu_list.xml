@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/space10"
+    android:paddingRight="@dimen/space10"
+    android:paddingTop="@dimen/space10"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/space10"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/space30"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/space30"
+        android:padding="@dimen/space5"
+        android:src="@drawable/ic_list_help"
+/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/text16"
+        android:padding="@dimen/space10"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_itemName"
+        android:drawableRight="@drawable/ic_right_to_arrow"
+        android:text="Safety Related"/>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="@dimen/space10"
+    android:layout_marginVertical="@dimen/space5"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/space20"
+    app:cardElevation="@dimen/space10">
+
+    <RelativeLayout
+        android:id="@+id/vehicle_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:layout_marginVertical="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space10"
+                    android:text="795YNX"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space10"
+                    android:text="Mercedes Mayback(Black)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="@dimen/space5"
+                    android:padding="@dimen/space5"
+                    android:text="Approved"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text14" />
+
+                <ImageView
+                    android:layout_width="@dimen/space100"
+                    android:layout_height="@dimen/space100"
+                    android:src="@drawable/mercesdess"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

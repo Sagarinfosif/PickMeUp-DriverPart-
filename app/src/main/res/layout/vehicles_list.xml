@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space1"
+        android:background="@color/black"
+        android:layout_margin="@dimen/space5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/space5"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/space80"
+            android:layout_height="@dimen/space80"
+            android:src="@drawable/ic_bike"
+            android:id="@+id/img_bike"
+            app:riv_corner_radius="@dimen/space15"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space10"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_marginTop="@dimen/space10"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_toRightOf="@id/img_bike"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/txt_title"
+                android:text="Pushbikers"
+                android:textSize="@dimen/text16"
+                android:layout_margin="@dimen/space5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity : 10 Kg"
+                android:id="@+id/txt_model"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="@dimen/space5"
+                android:textSize="@dimen/sp_14"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 item Only"
+                android:id="@+id/txt_year"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginHorizontal="@dimen/space5"
+                android:layout_marginTop="@dimen/space5"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space30"
+            android:text="See More"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_see_more"
+            android:textSize="@dimen/text12"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/space10"
+            android:textColor="@color/white"
+            android:background="@drawable/button_account_bg"/>
+    </RelativeLayout>
+</RelativeLayout>

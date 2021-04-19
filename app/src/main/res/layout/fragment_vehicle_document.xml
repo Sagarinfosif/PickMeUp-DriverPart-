@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.VehicleDocumentFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/topbar1" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginVertical="@dimen/space10"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space10"
+                    android:text="BMW 2-Series 225xe"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space10"
+                    android:text="@string/docuument_for_the_vehicle"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_vehicle_document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/document_list" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space1"
+                    android:background="@color/lightgrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:fontFamily="@font/roboto"
+                    android:id="@+id/tv_remove_vehicle"
+                    android:padding="@dimen/space10"
+                    android:text="Remove Vehicle"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text16" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

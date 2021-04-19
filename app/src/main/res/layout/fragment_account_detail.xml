@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AccountDetailFragment">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/topbar1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_button"
+        android:layout_below="@id/top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginVertical="@dimen/space5"
+                android:padding="@dimen/space16"
+                android:text="Account Holder's Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginBottom="@dimen/space10"
+                app:cardCornerRadius="@dimen/space20"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Holder's Name"
+                    android:padding="@dimen/text16"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginVertical="@dimen/space5"
+                android:padding="@dimen/space16"
+                android:text="Account Holder's Date of Birth"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginBottom="@dimen/space10"
+                app:cardCornerRadius="@dimen/space20"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="16/5/1997"
+                    android:padding="@dimen/text16"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginVertical="@dimen/space5"
+                android:padding="@dimen/space16"
+                android:text="Bank Account Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginBottom="@dimen/space10"
+                app:cardCornerRadius="@dimen/space20"
+                app:cardElevation="5dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="1234567890"
+                    android:padding="@dimen/text16"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginVertical="@dimen/space5"
+                android:padding="@dimen/space16"
+                android:text="BSB Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    app:cardCornerRadius="@dimen/space20"
+                    app:cardElevation="5dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="1234567890"
+                        android:padding="@dimen/text16"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    app:cardCornerRadius="@dimen/space20"
+                    app:cardElevation="5dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="1234567890"
+                        android:padding="@dimen/text16"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space60"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space10"
+        android:background="@drawable/button_cicle_blue"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textAllCaps="true"/>
+</RelativeLayout>

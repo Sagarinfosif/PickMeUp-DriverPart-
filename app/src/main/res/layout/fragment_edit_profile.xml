@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.EditProfileFragment">
+
+<!--    <include layout="@layout/topbar1"/>-->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/purple_700"
+    android:layout_height="?actionBarSize"
+    >
+    <ImageView
+        android:id="@+id/back_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text18"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/txt_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text18"
+        android:fontFamily="@font/roboto"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="@dimen/space10"
+        android:textStyle="bold"
+        android:text="Done"
+        android:layout_centerInParent="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/space5"
+        android:visibility="gone"
+
+        android:layout_centerVertical="true"
+        android:id="@+id/trip_check_switch"/>
+
+    <ImageView
+        android:id="@+id/edit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pencil"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+
+
+    <ImageView
+        android:id="@+id/done"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_checked"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/help"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_question"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+</RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_pic"
+                android:layout_width="@dimen/space150"
+                android:layout_height="@dimen/space150"
+                android:layout_gravity="left"
+                android:elevation="@dimen/space5"
+                android:padding="@dimen/space10"
+                android:src="@drawable/buss_user" />
+
+            <View
+                android:layout_marginVertical="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space2"
+                android:background="@color/lightgrey"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space16"
+                android:text="@string/first_name"
+
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto"
+                android:background="@color/white"
+                android:padding="@dimen/space16"
+                android:id="@+id/txt_name"
+                android:text="Jatin"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space16"
+                android:text="@string/last_name"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space16"
+                android:text=""
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space16"
+                android:text="@string/phone_number"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_Register_number"
+                    android:layout_weight="1.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/space16"
+                    android:text="+91987654321"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="Verified"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:visibility="visible"
+                    android:id="@+id/txt_phoneverify"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="Unverified"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space16"
+                android:text="@string/email"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_register_email"
+                    android:layout_weight="1.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/space16"
+                    android:text="jbhardwaj304@gmail.com"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="Verified"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:gravity="end"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="Unverified"
+                    android:id="@+id/txt_emailverify"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space16"
+                android:textColor="@color/grey"
+                android:text="@string/Password"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/update_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:padding="@dimen/space16"
+                android:text="**********"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space16"
+                android:textColor="@color/grey"
+                android:text="@string/address"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:padding="@dimen/space16"
+                android:background="@color/white"
+                android:id="@+id/txt_address"
+                android:text="Sco 37, TDI City Mohali"
+                android:singleLine="true"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

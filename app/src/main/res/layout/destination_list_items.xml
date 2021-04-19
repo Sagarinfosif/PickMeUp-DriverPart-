@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_location"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/space30"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/pic"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/space30"
+        android:src="@drawable/ic_home"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/pic"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Home"
+        android:textStyle="bold"
+        android:padding="@dimen/space10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="21 Chaucer Street"
+        android:visibility="visible"
+        android:padding="@dimen/space5"
+        android:paddingLeft="@dimen/space5"
+        android:textSize="@dimen/text14"
+        android:layout_marginLeft="@dimen/space5" />
+    </LinearLayout>
+
+</RelativeLayout>

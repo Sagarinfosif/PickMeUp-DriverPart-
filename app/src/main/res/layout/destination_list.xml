@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/space10"
+    android:id="@+id/ll_destination"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="19 December 14:46" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space5"
+            android:drawableLeft="@drawable/ic_black_circle"
+            android:drawablePadding="@dimen/space10"
+            android:drawableTint="@color/green"
+            android:text="Destination 1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space5"
+            android:drawableLeft="@drawable/ic_black_circle"
+            android:drawablePadding="@dimen/space10"
+            android:drawableTint="@color/quantum_orange"
+            android:text="Destination 1" />
+
+        <View
+            android:layout_marginTop="@dimen/space5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space1"
+            android:background="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.TripDetailFragment">
+
+    <include layout="@layout/topbar1"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space15"
+        android:paddingEnd="@dimen/space15"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="18/3/19"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:text="02:10AM"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/roboto"
+            android:text="30,00 €"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bookLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space20">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_marginRight="@dimen/space15"
+                android:padding="@dimen/space10"
+                android:id="@+id/helpBtn"
+                android:src="@drawable/ic_information" />
+            <LinearLayout
+                android:id="@+id/addressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/space15"
+                    android:layout_height="@dimen/space15"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/ic_navigation1" />
+
+                <ImageView
+                    android:layout_width="@dimen/space3"
+                    android:layout_height="@dimen/space3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/black_solid_round_shape" />
+
+                <ImageView
+                    android:layout_width="@dimen/space3"
+                    android:layout_height="@dimen/space3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/black_solid_round_shape" />
+
+                <ImageView
+                    android:layout_width="@dimen/space3"
+                    android:layout_height="@dimen/space3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/black_solid_round_shape" />
+                <ImageView
+                    android:layout_width="@dimen/space3"
+                    android:layout_height="@dimen/space3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/black_solid_round_shape" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/space15"
+                    android:layout_height="@dimen/space15"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+
+                    android:src="@drawable/ic_destination" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space20"
+                android:layout_toEndOf="@id/addressBar"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space55"
+                    android:layout_marginRight="@dimen/space15">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gruppo"
+                            android:text="@string/pickup_location"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_17" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:text="Frankin St 0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text16"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/space15"
+
+                    android:background="@color/lightgrey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space55"
+                    android:layout_below="@id/divider"
+                    android:layout_marginRight="@dimen/space20"
+                    android:layout_toRightOf="@id/addressBar"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gruppo"
+                            android:text="@string/drop_off_location"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_17" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/roboto"
+                            android:text="Frankin St 1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text16"
+                            />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space220"
+        android:scaleType="fitXY"
+        android:src="@drawable/mapimage"/>
+
+    <RelativeLayout
+        android:layout_marginVertical="@dimen/space5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgrey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space15"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:singleLine="true"
+            android:text="DRIVE A Receipt"
+            android:textSize="@dimen/text18"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/space15"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space45"
+        android:background="@color/white"
+        android:paddingRight="@dimen/space15"
+        android:paddingLeft="@dimen/space15" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Fare"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="+ 4.00 €"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space45"
+        android:background="@color/white"
+        android:paddingRight="@dimen/space15"
+        android:paddingLeft="@dimen/space15" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Vat"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="4.00 €"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"/>
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:background="@color/white"
+        android:paddingRight="@dimen/space15"
+        android:paddingLeft="@dimen/space15" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Total"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="8.00 €"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/roboto"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:background="@color/white"
+        android:paddingRight="@dimen/space15"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginBottom="@dimen/space20"
+        android:paddingLeft="@dimen/space15" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Paypal"
+                android:textSize="@dimen/text18"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="info@infosif.com"
+                android:textSize="@dimen/text18"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="8.00 €"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text18"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/roboto"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

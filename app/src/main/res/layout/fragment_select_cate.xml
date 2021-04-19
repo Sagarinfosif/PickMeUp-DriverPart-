@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_a"
+    tools:context=".fragments.SelectCateFragment">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/textDarkGrayBold16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/select_your_categories"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/sliderTruck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_marginRight="@dimen/space20"
+            android:elevation="6dp"
+            android:visibility="gone"
+            app:animation_duration="250"
+            app:area_margin="8dp"
+            app:border_radius="50dp"
+            app:inner_color="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:outer_color="@color/white"
+            app:slider_height="70dp"
+            app:slider_icon="@drawable/dsfdsfsfd"
+            app:slider_icon_color="@color/black"
+            app:slider_locked="false"
+            app:text="Truck"
+            app:text_color="@color/black"
+            app:text_size="24sp"
+            app:text_style="bold" />
+
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/sliderTaxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/space30"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_marginBottom="@dimen/space10"
+            android:elevation="6dp"
+            android:visibility="gone"
+            app:animation_duration="250"
+            app:area_margin="8dp"
+            app:border_radius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sliderTruck"
+            app:outer_color="@color/white"
+            app:slider_height="70dp"
+            app:slider_icon="@drawable/ic_sedan_car_model"
+            app:slider_icon_color="@color/black"
+            app:slider_locked="false"
+            app:text="Taxi"
+            app:text_color="@color/black"
+            app:text_size="24sp"
+            app:text_style="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTruck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space20"
+            android:layout_marginTop="@dimen/space10"
+            app:cardCornerRadius="@dimen/space40"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCircle"
+                    android:layout_width="@dimen/space60"
+                    android:layout_height="@dimen/space60"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    android:src="@drawable/ic_dry_clean"
+                    android:tint="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/space30"
+                    android:layout_height="@dimen/space30"
+                    android:layout_alignLeft="@id/imgCircle"
+                    android:layout_alignTop="@id/imgCircle"
+                    android:layout_alignRight="@id/imgCircle"
+                    android:layout_alignBottom="@id/imgCircle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dsfdsfsfd" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Truck"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space24"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:id="@+id/cardTaxi"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space20"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginBottom="@dimen/space10"
+            app:cardCornerRadius="@dimen/space40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTruck">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCircl"
+                    android:layout_width="@dimen/space60"
+                    android:layout_height="@dimen/space60"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_marginBottom="@dimen/space10"
+                    android:src="@drawable/ic_dry_clean"
+                    android:tint="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/space40"
+                    android:layout_height="@dimen/space40"
+                    android:layout_alignLeft="@id/imgCircl"
+                    android:layout_alignTop="@id/imgCircl"
+                    android:layout_alignRight="@id/imgCircl"
+                    android:layout_alignBottom="@id/imgCircl"
+                    android:src="@drawable/ic_sedan_car_model" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Taxi"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/space24"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

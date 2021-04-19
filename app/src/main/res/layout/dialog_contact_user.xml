@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Please Choose your Options:"
+        android:textSize="@dimen/space20"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_marginTop="@dimen/space30"
+        android:layout_marginBottom="@dimen/space30"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:id="@+id/call"
+            android:layout_marginTop="@dimen/space10"
+            android:drawablePadding="@dimen/space10"
+            android:drawableLeft="@drawable/ic_phone_call"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/space16"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/space10"
+            android:background="@color/lightgrey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:id="@+id/message"
+            android:layout_marginBottom="@dimen/space10"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="@dimen/space10"
+            android:drawableLeft="@drawable/ic_message"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/space16"/>
+    </LinearLayout>
+
+</LinearLayout>

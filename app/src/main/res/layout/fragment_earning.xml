@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EarningFragment">
+
+    <include layout="@layout/topbar1"/>
+
+            <RelativeLayout
+                android:background="@color/purple_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/earning"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:padding="@dimen/space10"
+                        android:gravity="center_horizontal"
+                        android:text="This Week's"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/space10"
+                        android:text="18 Jan - 24 Jan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:padding="@dimen/space10"
+                        android:text="$ 0.00"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text18"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/space30"
+                    android:layout_height="@dimen/space30"
+                    android:id="@+id/right_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/space10"
+                    android:src="@drawable/ic_right_to_arrow"/>
+            </RelativeLayout>
+
+            <noman.weekcalendar.WeekCalendar
+                android:id="@+id/weekCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/space10"
+                app:daysBackgroundColor="@color/white"
+                app:daysTextColor="@color/black"
+                app:todaysDateBgColor="@color/purple_400"
+                app:weekBackgroundColor="@color/white"
+                app:weekTextColor="@color/purple_400" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_earning_menu"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_help_menu_list" />
+
+
+</LinearLayout>

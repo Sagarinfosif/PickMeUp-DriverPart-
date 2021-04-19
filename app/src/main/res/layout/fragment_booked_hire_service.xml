@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BookedHireServiceFragment">
+
+    <include layout="@layout/topbar1"
+        android:id="@+id/topbar"/>
+
+    <LinearLayout
+        android:layout_above="@id/take_photo"
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space20"
+                    android:layout_marginVertical="@dimen/space10"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space10"
+                    android:text="@string/vehicle_booked_hire"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space20"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space10"
+                    android:text="@string/vehicle_certificate_booked_hire_description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="@dimen/space20"
+                    android:src="@drawable/license"
+                    android:layout_marginHorizontal="@dimen/space20"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/space60"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginBottom="@dimen/space30"
+        android:background="@drawable/button_cicle_blue"
+        android:text="@string/take_photo"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

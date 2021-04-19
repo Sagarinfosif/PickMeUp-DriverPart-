@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ActiveServiceFragment">
+
+
+    <include layout="@layout/topbar1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space30"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space100"
+                android:layout_marginTop="@dimen/space10"
+                android:elevation="@dimen/space10"
+                android:src="@drawable/buss_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Drive-Idel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space16"
+                android:textStyle="bold" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_drive_idel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/space5"
+                app:sb_checked_color="@color/purple_400"
+                app:sb_enable_effect="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space30"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space100"
+                android:layout_marginTop="@dimen/space10"
+                android:elevation="@dimen/space10"
+                android:src="@drawable/buss_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Drive-Link"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space16"
+                android:textStyle="bold" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_drive_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/space5"
+                app:sb_checked_color="@color/purple_400"
+                app:sb_enable_effect="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space30"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space100"
+                android:elevation="@dimen/space10"
+                android:layout_marginTop="@dimen/space10"
+                android:src="@drawable/buss_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Drive"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space16"
+                android:textStyle="bold" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/space5"
+                app:sb_checked_color="@color/purple_400"
+                app:sb_enable_effect="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="@dimen/space120"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/space50"
+        android:layout_marginTop="@dimen/space40"
+        android:background="@drawable/button_cicle_blue"
+        android:text="Reset"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+</LinearLayout>

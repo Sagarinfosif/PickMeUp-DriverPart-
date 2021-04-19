@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TruckModule.Activity.Fragment.MyJobDetailFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/topbar1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <LinearLayout
+            android:id="@+id/lay_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lay_search_list_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/space20"
+                    android:background="@drawable/right_round_bg"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/space15"
+                    android:paddingVertical="@dimen/space10">
+
+                    <TextView
+                        android:id="@+id/item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:gravity="center_vertical"
+                        android:text="@string/jobs_details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_bg"
+                        android:padding="5dp"
+                        android:paddingHorizontal="@dimen/space10"
+                        android:src="@drawable/ic_baseline_arrow_forward_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/space10"
+                    android:elevation="@dimen/space10"
+                    android:text="@string/tip_recived_3"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space25"
+                android:layout_marginVertical="@dimen/space10"
+                android:background="@drawable/boxes_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10"
+                    android:drawableLeft="@drawable/ic_box"
+                    android:drawablePadding="@dimen/space10"
+                    android:drawableTint="@color/quantum_brown"
+                    android:gravity="center"
+                    android:text="@string/boxes_package"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginVertical="@dimen/space5"
+                    android:text="@string/pickup"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginVertical="@dimen/space5"
+                    android:text="@string/dropup_location"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginVertical="@dimen/space5"
+                    android:text="@string/weight_200kg"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginVertical="@dimen/space5"
+                    android:text="@string/price_100"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_marginVertical="@dimen/space5"
+                    android:text="@string/date_30_9_2020"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space20"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/space5"
+                    android:text="Order Status"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <com.rakshakhegde.stepperindicator.StepperIndicator
+                    android:id="@+id/stepperindicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10"
+                    app:stpi_circleColor="@color/black"
+                    app:stpi_indicatorColor="@color/black"
+                    app:stpi_labelColor="@color/black"
+                    app:stpi_labels="@array/stepperarray"
+                    app:stpi_lineColor="@color/black"
+                    app:stpi_lineDoneColor="@color/black"
+                    app:stpi_showLabels="true"
+                    app:stpi_stepCount="4" />
+
+                <LinearLayout
+                    android:id="@+id/lay_delivered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:padding="@dimen/space10"
+                        android:text="@string/u2022_package_is_deliverd"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:text="@string/do_you_want_to_rate_the_coustomer"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space10">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space30"
+                            android:layout_margin="@dimen/space5"
+                            android:background="@drawable/categories_selected_bg"
+                            android:text="@string/yes"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_later"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space30"
+                            android:layout_margin="@dimen/space5"
+                            android:layout_toRightOf="@id/btn_yes"
+                            android:background="@drawable/categories_unselected_bg"
+                            android:text="@string/later"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

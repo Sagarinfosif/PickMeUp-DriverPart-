@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".fragments.CongoFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="@dimen/space30"
+                android:layout_gravity="center_horizontal"/>
+
+
+                <LinearLayout
+                    android:padding="@dimen/space15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="@dimen/space150"
+                        android:layout_height="@dimen/space150"
+                        android:src="@drawable/congo"
+                        android:layout_marginTop="@dimen/space20"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Congratulations"
+                        android:layout_marginTop="@dimen/space20"
+                        android:textSize="@dimen/space20"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:fontFamily="@font/roboto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space5"
+                        android:layout_marginTop="@dimen/space20"
+                        android:layout_marginVertical="@dimen/space30"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Your Profile is\nSuccessfully Verified."
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text16"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+            <Button
+                android:id="@+id/btn_submit_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_cicle"
+                android:layout_marginHorizontal="@dimen/space60"
+                android:elevation="@dimen/space10"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/space10"
+                android:text="done"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

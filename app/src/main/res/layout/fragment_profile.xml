@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ProfileFragment">
+    <include layout="@layout/topbar1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space200"
+                android:backgroundTint="@color/purple_210" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_pic"
+                android:layout_width="@dimen/space150"
+                android:layout_height="@dimen/space150"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="-70dp"
+                android:background="@drawable/ic_circle_outline"
+                android:elevation="@dimen/space5"
+                android:padding="@dimen/space10"
+                android:src="@drawable/buss_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:text="Omninos"
+                android:id="@+id/txt_name"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:text="Melbourn Australia"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16" />
+
+            <RelativeLayout
+                android:id="@+id/rl_acceptance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="Acceptance Rate"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="40%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space2"
+                android:layout_marginVertical="@dimen/space5"
+                android:background="@color/lightgrey" />
+
+            <RelativeLayout
+                android:id="@+id/rl_completion_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="Completion Rate"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="40%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space2"
+                android:layout_marginVertical="@dimen/space5"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto"
+                    android:padding="@dimen/space16"
+                    android:text="Star Rating &amp; Reviews of last 50 Trips"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_total_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/space10"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/roboto"
+                            android:padding="@dimen/space12"
+                            android:text="4.5"
+                            android:textSize="@dimen/text18"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:rating="4.5" />
+                    </LinearLayout>
+
+                    <com.taufiqrahman.reviewratings.RatingReviews xmlns:bar="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rating_reviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space20"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@+id/ll_total_rate"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.499"
+                        bar:animation="true"
+                        bar:max_value="100"
+                        bar:show_label="true"
+                        bar:spaces="0dp"
+                        bar:text_color="#333333"
+                        bar:text_size="14sp"
+                        bar:width="25dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/space10"
+                                android:drawableLeft="@drawable/ic_pin"
+                                android:drawablePadding="@dimen/space5"
+                                android:drawableTint="@color/purple_700"
+                                android:text="Registered City : "
+                                android:textColor="@color/purple_700"
+                                android:textSize="@dimen/text14"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/space10"
+                                android:layout_toRightOf="@+id/city"
+                                android:text="Melbourn"
+                                android:textColor="@color/purple_700"
+                                android:textSize="@dimen/text14"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space20"
+                            android:layout_marginTop="@dimen/space20"
+                            app:cardCornerRadius="@dimen/space20"
+                            app:cardElevation="@dimen/space10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="20"
+                                        android:textColor="@color/yellow"
+                                        android:textSize="@dimen/text24"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.2"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/space16">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Trips Completed This Week"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text16"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text="Keep Up the Good" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space20"
+                            android:layout_marginTop="@dimen/space20"
+                            app:cardCornerRadius="@dimen/space20"
+                            app:cardElevation="@dimen/space10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/space20"
+                                android:layout_marginTop="@dimen/space20"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="1+ years"
+                                        android:textColor="@color/yellow"
+                                        android:textSize="@dimen/text22"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="@dimen/space5"
+                                        android:text="of Driving"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/text22"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/space5"
+                                    android:layout_marginBottom="@dimen/space10"
+                                    android:gravity="center_horizontal"
+                                    android:text="Safely Completed more than 200+ trips. Good Woork. Keep it Up!" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/space20"
+                            android:layout_marginTop="@dimen/space20"
+                            android:layout_marginBottom="@dimen/space20"
+                            app:cardCornerRadius="@dimen/space20"
+                            app:cardElevation="@dimen/space10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="92%"
+                                    android:textColor="@color/yellow"
+                                    android:textSize="@dimen/text22"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/space5"
+                                    android:text="5-Star Ratings"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text22"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/space10"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/space5"
+                                android:gravity="center_horizontal"
+                                android:text="You are a Popular Driver!" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UserGoDestinationFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_side_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/space2"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/space5"
+            android:padding="@dimen/space10"
+            android:src="@drawable/ic_left_arrow"
+            app:tint="@color/black" />
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/bottom_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="@dimen/space70"
+                android:layout_height="@dimen/space5"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@drawable/round_corner_solid_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space5"
+                        android:text="Upkar Singh"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space10"
+                        android:text="Destination:- 6 Km 300 m"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space2"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_pic"
+                        android:layout_width="@dimen/space60"
+                        android:layout_height="@dimen/space60"
+                        android:layout_gravity="center"
+                        android:elevation="@dimen/space5"
+                        android:src="@drawable/buss_user" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/space5"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/space0"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/space70"
+                android:layout_height="@dimen/space5"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space5"
+                android:background="@drawable/round_corner_solid_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space10">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space10"
+                    android:layout_toLeftOf="@+id/user_rider_pic"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/space10"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/user_rider_pic"
+                    android:text="jatin sharma"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/space10"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/user_rider_pic"
+                        android:text="Destination Reached Successfully"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/space60"
+                    android:layout_height="@dimen/space60"
+                    android:id="@+id/user_rider_pic"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginVertical="@dimen/space10"
+                    android:layout_marginRight="@dimen/space10"
+                    android:src="@drawable/buss_user" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@color/lightgrey" />
+
+            <in.shadowfax.proswipebutton.ProSwipeButton
+                android:id="@+id/complete_ride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space15"
+                android:layout_marginBottom="@dimen/space10"
+                app:bg_color="@color/red"
+                app:btn_text="Complete Trip"
+                app:text_size="@dimen/text20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

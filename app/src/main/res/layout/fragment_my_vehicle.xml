@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MyVehicleFragment">
+
+    <include layout="@layout/topbar1"
+        android:id="@+id/topbar"/>
+
+    <TextView
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_drive"
+        android:layout_marginVertical="@dimen/space10"
+        android:text="Select a Vehicle to Drive"
+        android:layout_marginHorizontal="@dimen/space20"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="@dimen/space10"
+        android:textSize="@dimen/text20"
+        android:fontFamily="@font/roboto"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_drive"
+        tools:listitem="@layout/vehicle"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_above="@+id/add_vehicle"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/recycle_vehicle"/>
+    <Button
+        android:id="@+id/add_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_cicle_blue"
+        android:text="@string/vehicle"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space40"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

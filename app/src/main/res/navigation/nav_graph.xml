@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.drive.pickmeup.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginSignUpFragment"
+            app:destination="@id/loginSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.drive.pickmeup.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerPhoneFragment"
+            app:destination="@id/registerPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.drive.pickmeup.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_congoFragment"
+            app:destination="@id/congoFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_passwordRegisterFragment"
+            app:destination="@id/passwordRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.drive.pickmeup.fragments.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_congoFragment"
+            app:destination="@id/congoFragment" />
+        <action
+            android:id="@+id/action_otpFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/congoFragment"
+        android:name="com.drive.pickmeup.fragments.CongoFragment"
+        android:label="fragment_congo"
+        tools:layout="@layout/fragment_congo" >
+        <action
+            android:id="@+id/action_congoFragment_to_selectCateFragment"
+            app:destination="@id/selectCateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPhoneFragment"
+        android:name="com.drive.pickmeup.fragments.RegisterPhoneFragment"
+        android:label="fragment_register_phone"
+        tools:layout="@layout/fragment_register_phone" >
+        <action
+            android:id="@+id/action_registerPhoneFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allDocumentUploadFragment2"
+        android:name="com.drive.pickmeup.fragments.AllDocumentUploadFragment"
+        android:label="fragment_all_document_upload"
+        tools:layout="@layout/fragment_all_document_upload" />
+    <fragment
+        android:id="@+id/passwordRegisterFragment"
+        android:name="com.drive.pickmeup.PasswordRegisterFragment"
+        android:label="fragment_password_register"
+        tools:layout="@layout/fragment_password_register" >
+        <action
+            android:id="@+id/action_passwordRegisterFragment_to_congoFragment"
+            app:destination="@id/congoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginSignUpFragment"
+        android:name="com.drive.pickmeup.fragments.LoginSignUpFragment"
+        android:label="fragment_login_sign_up"
+        tools:layout="@layout/fragment_login_sign_up" >
+        <action
+            android:id="@+id/action_loginSignUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_loginSignUpFragment_to_registerPhoneFragment"
+            app:destination="@id/registerPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectCateFragment"
+        android:name="com.drive.pickmeup.fragments.SelectCateFragment"
+        android:label="fragment_select_cate"
+        tools:layout="@layout/fragment_select_cate" >
+        <action
+            android:id="@+id/action_selectCateFragment_to_truckRegistrationFragment"
+            app:destination="@id/truckRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manualRideMapFragment2"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ManualRideMapFragment"
+        android:label="fragment_manual_ride_map"
+        tools:layout="@layout/fragment_manual_ride_map" />
+    <fragment
+        android:id="@+id/truckRegistrationFragment"
+        android:name="com.drive.pickmeup.fragments.TruckRegistrationFragment"
+        android:label="fragment_truck_registration"
+        tools:layout="@layout/fragment_truck_registration" />
+</navigation>

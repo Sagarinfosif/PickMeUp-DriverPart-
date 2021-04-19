@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_list"
+    android:layout_marginBottom="@dimen/space10"
+    android:background="@color/lightbackground"
+    android:paddingLeft="@dimen/space10"
+    android:paddingTop="@dimen/space10"
+    android:paddingRight="@dimen/space10"
+    android:paddingBottom="@dimen/space10">
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/space30"
+        android:layout_height="@dimen/space30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_upload_check" />
+
+    <LinearLayout
+        android:id="@+id/ll_document_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space10"
+            android:padding="@dimen/space5"
+            android:text="Completed"
+            android:textSize="@dimen/text12" />
+
+        <TextView
+            android:id="@+id/tv_itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space10"
+            android:padding="@dimen/space5"
+            android:text="Terms and Condition"
+            android:textSize="@dimen/text16" />
+
+    </LinearLayout>
+</RelativeLayout>

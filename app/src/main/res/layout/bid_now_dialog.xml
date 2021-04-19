@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/space100"
+        android:layout_height="@dimen/space100"
+        android:src="@drawable/person"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="@dimen/space1"
+        android:elevation="@dimen/space5"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space20"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seeme"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/space10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Box Packages"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_box"
+        android:drawablePadding="@dimen/space10"
+        android:drawableTint="@color/quantum_brown"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_amp_time_02_sep_2020_11_00_pm_n_budget_100"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space10"
+        android:textStyle="italic"
+        android:textSize="@dimen/text12"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TVF Road Near, Cricket Stadium, Melbourne Australia to \n Lorem Ipsum, Cricket Stadium,Melbourne Australia"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text10"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space5"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawableTint="@color/black"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:layout_width="@dimen/space100"
+        android:layout_height="wrap_content"
+        android:background="@drawable/categories_unselected_bg"
+        android:hint="Enter Amount"
+        android:textSize="@dimen/text12"
+        android:singleLine="true"
+        android:inputType="number"
+        android:padding="@dimen/space10"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space10"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/space100"
+        android:layout_height="wrap_content"
+        android:text="Bid"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_account_bg"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space10"/>
+
+</LinearLayout>

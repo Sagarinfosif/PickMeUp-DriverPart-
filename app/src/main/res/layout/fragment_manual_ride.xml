@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TruckModule.Activity.Fragment.ManualRideFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/topbar1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space30"
+                android:text="Please enter the customer's phone number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space20"
+                android:background="@drawable/edt_back"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:hint="1234567890"
+                    android:paddingLeft="@dimen/space5"
+                    android:paddingRight="@dimen/space5" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/textWhitGray16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCreateRider"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space30"
+                android:background="@drawable/btn_bac"
+                android:paddingLeft="@dimen/space35"
+                android:paddingRight="@dimen/space35"
+                android:text="Create a Ride"
+                android:textAllCaps="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textBalck16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space30"
+                android:gravity="center_horizontal"
+                android:text="Manually start a ride for a customer by entering \ntheir phone number" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

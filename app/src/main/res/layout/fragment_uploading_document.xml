@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.help.UploadingDocumentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/topbar1" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_below="@+id/topbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_text_title"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="@dimen/space10"
+                    android:text="Title"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/space10"
+                    android:textSize="@dimen/text18"
+                    android:fontFamily="@font/roboto"/>
+
+
+
+                <TextView
+                    android:layout_below="@+id/tv_text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:padding="@dimen/space10"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/roboto"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space10"
+            android:text="@string/help_anything"
+            android:layout_marginHorizontal="@dimen/space20"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/helpelse"
+            android:padding="@dimen/space10"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/roboto"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/feedback_description"
+            android:layout_marginBottom="@dimen/space10"
+            android:text="@string/satisfy_support"
+            android:layout_marginHorizontal="@dimen/space20"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/space10"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/roboto"/>
+
+        <com.hsalf.smilerating.SmileRating
+            android:id="@+id/smile_rating"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/space10"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_cicle_blue"
+            android:text="@string/yes"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/space10"
+            android:layout_marginHorizontal="@dimen/space60"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/no_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_cicle_blue"
+            android:text="@string/no"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/space10"
+            android:layout_marginHorizontal="@dimen/space60"
+            android:layout_alignParentBottom="true"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TruckModule.Activity.Fragment.HomeFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/topbar_nav_home" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/black"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space10"
+                            android:id="@+id/img_loc"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_location_on_24"
+                            app:tint="@color/white" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/et_search_loc"
+                            android:background="@drawable/search_bg"
+                            android:layout_toRightOf="@id/img_loc"
+                            android:padding="@dimen/space10"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="@dimen/text12"
+                            android:hint="#138,Near Education Board, Delhi"
+                            android:layout_toLeftOf="@id/img_add"
+                            android:layout_marginHorizontal="@dimen/space20"
+                            android:layout_marginVertical="@dimen/space10"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/img_add"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/space10"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_baseline_add_circle_24"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Categories"
+                                android:textColor="@color/black"
+                                android:layout_margin="@dimen/space10"/>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/categories_list"
+                                android:id="@+id/categories_recycler"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jobs"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/space10"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text16"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:listitem="@layout/jobs_list"
+                            android:id="@+id/jobs_recycler"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                        <!--            <TextView-->
+                        <!--                android:layout_width="wrap_content"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:text="Categories"-->
+                        <!--                android:textSize="@dimen/text18"-->
+                        <!--                android:textColor="@color/black"-->
+                        <!--                android:layout_margin="@dimen/space10"-->
+                        <!--                android:textStyle="bold"/>-->
+                        <!--            <androidx.recyclerview.widget.RecyclerView-->
+                        <!--                android:layout_width="match_parent"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:orientation="horizontal"-->
+                        <!--                android:id="@+id/categories_recyceler"-->
+                        <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                        <!--                tools:listitem="@layout/catogries_list"/>-->
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

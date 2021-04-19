@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AccountFragment">
+
+  <include layout="@layout/topbar1"/>
+
+
+        <TextView
+            android:id="@+id/tv_documents"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:padding="@dimen/space16"
+            android:text="@string/documents"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_abn"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/space2"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:padding="@dimen/space16"
+            android:text="@string/abn"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+
+</LinearLayout>

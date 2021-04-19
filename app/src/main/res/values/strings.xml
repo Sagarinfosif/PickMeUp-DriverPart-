@@ -1,0 +1,292 @@
+<resources>
+    <string name="google_maps_api_key">AIzaSyDFO1yNBgrQViiFr2CQ24t_9IV9AHBZNcU</string>
+
+    <string name="app_name">Pick me Up</string>
+    <string name="login">Login</string>
+    <string name="start">Start</string>
+    <string name="drive">Drive</string>
+    <string name="select_your_categories">SELECT YOUR CATEGORIES</string>
+    <string name="ForgetPassword">Forget Password</string>
+    <string name="Password">Password</string>
+    <string name="nohaveaccount">Don\'t have an account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="verification">Verification</string>
+    <string name="haveaccount">have an account?</string>
+    <string name="signin">Sign In</string>
+    <string name="starratting">Star Rating</string>
+    <string name="Verificationcode">Enter your Verification Code</string>
+    <string name="term_and_policy">I accept the Drive Terms of Use &amp; Privarcy Policy.</string>
+    <string name="navigation">Navigation</string>
+    <string name="logout">Sign Out</string>
+    <string name="trip_sharing_channel">Trip Sharing Channels</string>
+    <string name="privacy">Privacy</string>
+    <string name="legal">Legal</string>
+    <string name="about_the_app">About The App</string>
+    <string name="vehicle">Add Vehicles</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="weekly_completion_rate">Weekly Completion Rate</string>
+    <string name="weekly_acceptance_rate">Weekly Acceptance Rate</string>
+    <string name="weekly_star_rate">Weekly Star Rating</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="email">Email</string>
+    <string name="contactphone">Contact</string>
+    <string name="vehiclename">Vehicle Name</string>
+    <string name="Save">Save</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="vehicle_image">Upload Vehicle Image</string>
+    <string name="vehicle_insurance">Upload Insurance</string>
+    <string name="vehicle_rc">Upload Registration Certificate</string>
+    <string name="vehicle_licence">Upload Driving Licence</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="confirm_your_email">Confirm Your Email Address</string>
+    <string name="old_password">Enter Old Password</string>
+    <string name="new_password">Enter New Password</string>
+    <string name="rewards">Rewards will be updated from time to time. Please check back later</string>
+    <string name="myProfile13">My Profile</string>
+    <string name="verified">Verified</string>
+    <string name="name3">Name</string>
+    <string name="service_type">Service Type</string>
+    <string name="location3">Location</string>
+    <string name="bank_information">bank Information</string>
+    <string name="help3">Help</string>
+    <string name="continues">Continue</string>
+    <string name="select_another_trip">Select Another Trip</string>
+    <string name="message_history2">Message History</string>
+    <string name="safety_toolkit">Safety Toolkit</string>
+    <string name="share_trip">Share your Trip</string>
+    <string name="trusted_contacts">Trusted Contacts</string>
+    <string name="call">Call 000</string>
+    <string name="trip_check">Trip Check</string>
+    <string name="select_contact">Select family and friends as your Trusted Contacts</string>
+    <string name="trip_check_description">Learn more about our TripCheck feature</string>
+    <string name="trip_check_full_description">For the Safety of all our users, if any unusual is detected during your trip. you will receive a notification. Please note: if you wish to stop receiving push notifications you can disable them.</string>
+    <string name="safety_toolkit_description">We take the safety of all DRIVE users very seriously. Here you can find all the features designed specifically for your safety.</string>
+    <string name="select_default_map">Select Default Map</string>
+    <string name="navigate_default_map">Navigate with Default Map</string>
+    <string name="help_anything">Can we help with anything else?</string>
+    <string name="satisfy_support">How Satisfied are you with the support you received?</string>
+    <string name="vehicle_requirement">Vehicle Requirement</string>
+    <string name="vehicle_information">Enter your Vehicle Information</string>
+    <string name="vehicle_manufactured">Manufactured</string>
+    <string name="vehicle_model">Vechicle Model</string>
+    <string name="docuument_for_the_vehicle">Please provide the following documents for this vehicle</string>
+    <string name="vehicle_certificate_insurance">Take a photo of your Vehicle Insurance Certificate</string>
+    <string name="vehicle_registration_insurance">Take a photo of your Vehicle Registration Certificate</string>
+    <string name="vehicle_inspection_insurance">Take a photo of your Certificate of Inspection</string>
+    <string name="vehicle_booked_hire">Take a photo of your Booked Hire Service Licence</string>
+    <string name="take_photo">Take photo</string>
+    <string name="vehicle_certificate_insurance_description">Please make sure uploaded photo will clearly see or proper completed</string>
+    <string name="vehicle_certificate_inspection_description">Please make sure uploaded photoof PDF of your\'s vehicle will clearly see or proper completed</string>
+    <string name="vehicle_certificate_booked_hire_description">Please make sure uploaded photo will clearly see your uploaded details</string>
+    <string name="vehicle_certificate_registration_description">Please make sure uploaded photo will clearly see or proper completed these details: * Vehicle plate * VIN * Vehicle make ,model and year * Expiry date</string>
+    <string name="today_earning">Today\'s Earning</string>
+    <string name="trip">Trips</string>
+    <string name="documents">Documents</string>
+    <string name="abn">Enter your ABN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+    <string name="enter_mobile">ENTER YOUR MOBILE NUMBER</string>
+    <string name="Continue">Continue</string>
+    <string name="confirm_Password">Confirm Password</string>
+    <string name="google">Google</string>
+    <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="qty_unit"><![CDATA[Qty & Unit]]></string>
+
+
+    <string name="surname">Surname</string>
+    <string name="cvv">CVV</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="confirm_shipment">Confirm Shipment</string>
+    <string name="confirm_and_pay">Confirm and Pay</string>
+    <string name="shipment_confirmed">Shipment Confirmed</string>
+    <string name="success">Success</string>
+    <string name="your_shipment_has_been_processed_please_nreview_your_details_in_history">Your shipment has been processed , please \nreview your details in history.</string>
+    <string name="view_details">View Details</string>
+    <string name="ship_by_date">Ship by Date</string>
+    <string name="origin_city">Origin (City)</string>
+    <string name="destination_city">Destination (City)</string>
+    <string name="qty_units"><![CDATA[Qty & Units]]></string>
+    <string name="click_to_open">Click to open</string>
+    <string name="additional_document_site_safety">Additional Document (Site Safety)</string>
+    <string name="site_access_truck_type_pref">Site access - truck type pref...</string>
+    <string name="any_special_comments">Any Special Comments</string>
+    <string name="_15_kg">15 kg</string>
+    <string name="weight">Weight</string>
+    <string name="units">Units</string>
+    <string name="_4_pallets">4 Pallets</string>
+    <string name="quantity">Quantity</string>
+    <string name="_09_02_2021">09/02/2021</string>
+    <string name="shipper_past_working_rate">Shipper Past Working Rate</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!--    <string-array name="city">-->
+    <!--        <item>Boston</item>-->
+    <!--        <item>Dallas</item>-->
+    <!--        <item>Jackson</item>-->
+
+    <!--    </string-array>-->
+
+
+    <string name="receiver_contact_number">Receiver Contact Number</string>
+    <string name="info_gmail_com">info@gmail.com</string>
+    <string name="receiver_email">Receiver Email</string>
+    <string name="dispatch_date">Dispatch Date</string>
+    <string name="choose_your_file_only_pdf_jpeg_files_uploaded">Choose Your File (Only PDF, JPEG files Uploaded)</string>
+    <string name="shipment_number_if_any">Shipment Number (If Any)</string>
+    <string name="recommended_truckers_only">Recommended Truckers Only</string>
+    <string name="_275_400">$ 275 - $400</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="approx_travel_time_02_hours">Approx. Travel Time: 02 Hours</string>
+    <string name="_17_modern_street_suburb_state">17 Modern Street Suburb, State</string>
+    <string name="picture_of_national_id_front_back"><![CDATA[Picture of national ID (Front & Back)]]></string>
+    <string name="by_signing_up_i_agree_to_the_terms_of_condition">By Signing up I agree to the terms of condition</string>
+
+
+    <string-array name="truckType">
+        <item>Pickup Truck</item>
+        <item>Pickup Truck</item>
+        <item>Pickup Truck</item>
+
+    </string-array>
+
+
+    <string name="email_address">Email Address</string>
+    <string name="or_login_with">Or login with</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="_160062">160062</string>
+    <string name="post_code">Post Code</string>
+    <string name="a_verification_code_has_been_sent_to_the_phone">A Verification code has been sent to the phone</string>
+    <string name="enter_the_code_below">enter the code below.</string>
+    <string name="number_91_5465644320_please">number +91 5465644320. Please</string>
+    <string name="sohit_sharma">Sohit Sharma</string>
+    <string name="i_want_to_shif_my_office_address_8523_australia">I want to shif my office, Address #8523, Australia</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="demo_text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</string>
+    <string name="settings">Settings</string>
+    <string name="earnings">Earnings</string>
+    <string name="accounts">Accounts</string>
+    <string name="my_bids">My Bids</string>
+    <string name="my_deliveries">My Deliveries</string>
+    <string name="my_vehicles">My Vehicles</string>
+    <string name="my_documents">My Documents</string>
+    <string name="my_profile">My Profile</string>
+    <string name="knows_english_and_hindi">Knows English and Hindi</string>
+    <string name="from_india">From India</string>
+    <string name="_6_325_trips_over_2_5_years">6,325 trips over 2.5 years</string>
+    <string name="great_business_ideas">"Great business ideas"</string>
+    <string name="achievement">Achievement</string>
+    <string name="share_your_story">Share Your Story</string>
+    <string name="fun_facts">Fun facts</string>
+    <string name="driving_licence">Driving Licence</string>
+    <string name="passport">Passport</string>
+    <string name="australian_visa">Australian Visa</string>
+    <string name="abn_gst_registration_confirmation"><![CDATA[ABN & GST Registration Confirmation]]></string>
+    <string name="australian_business_number_abn">Australian Business Number(ABN)</string>
+    <string name="term_conditions"><![CDATA[Term & Conditions]]></string>
+    <string name="done">done</string>
+    <string name="password">Password</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="seeme">Seeme</string>
+    <string name="date_amp_time_02_sep_2020_11_00_pm_n_budget_100"><![CDATA[Date & Time : 02 Sep 2020, 11:00 PM \n Budget - $100]]></string>
+    <string name="if_you_wish_to_cancle_this_job_your_account_will_be_blocked_for_x_hours_and_your_rating_will_go_down">If you wish to cancle this job your account will be blocked for X hours and your rating will go down</string>
+    <string name="please_enter_the_re_estimated_budget">Please Enter the re-estimated budget</string>
+    <string name="_200">$200</string>
+    <string name="confirm">Confirm</string>
+    <string name="review_your_driver">Review Your Driver</string>
+    <string name="enter_your_feedback_here">Enter your feedback here</string>
+    <string name="hey_you_have_crossed_the_limit_of_cancellation">Hey , You have crossed the limit of cancellation</string>
+    <string name="my_jobs_details">My Jobs Details</string>
+    <string name="jobs_details">Jobs Details</string>
+    <string name="tip_recived_3">Tip Recived 3$</string>
+    <string name="boxes_package">Boxes Package</string>
+    <string name="pickup">Pickup :</string>
+    <string name="dropup_location">Dropup Location :</string>
+    <string name="weight_200kg">Weight : 200kg</string>
+    <string name="price_100">Price : $100</string>
+    <string name="date_30_9_2020">Date : 30-9-2020</string>
+    <string name="u2022_package_is_deliverd">• Package is Deliverd</string>
+    <string name="do_you_want_to_rate_the_coustomer">Do you want to Rate the coustomer ?</string>
+    <string name="later">Later</string>
+    <string name="chat">Chat</string>
+    <string name="start_job">Start Job</string>
+    <string name="please_type_the_reason_for_your_declination">Please type the reason for your declination</string>
+    <string name="enter_your_reason">Enter Your Reason</string>
+    <string name="submit">Submit</string>
+    <string name="attach_your_document"> Attach Your Document </string>
+    <string name="_50_points">(50 Points)</string>
+    <string name="certificate_of_australian_citizenship">Certificate of Australian citizenship</string>
+    <string name="_25_points">(25 Points)</string>
+    <string name="your_documents_has_been_submitted_n_you_will_get_confirmation_within_48_hours">Your documents has been submitted. \n you will get confirmation within 48 hours.</string>
+    <string name="bank_card">Bank Card</string>
+    <string name="details">Details</string>
+    <string name="bidding">My Bids</string>
+    <string name="driving_history">Driving History</string>
+
+    <string name="to_become_super_driver">To become Super Driver</string>
+    <string name="fedral_police_check">Fedral Police Check</string>
+    <string name="required_document">Required Document</string>
+
+    <string name="medicare_card">Medicare Card</string>
+
+    <string name="proof_of_residence">Proof of Residence</string>
+    <string name="secondary_document">Secondary Document</string>
+
+    <string name="primary_document">Primary Document</string>
+    <string name="assigned_jobs">Assigned Jobs</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="save">Save</string>
+    <string name="help">Help</string>
+    <string name="upcoming_jobs">Upcoming Jobs</string>
+    <string name="street_address">Street Address</string>
+    <string name="street_address_line_1">Street Address Line 2 (Optional)</string>
+    <string name="city_suburb">City / Suburb</string>
+    <string name="country">Country</string>
+    <string name="add_vehicle_details">Add Vehicle Details</string>
+    <string name="let_rider_know_i_am_deaf">Let Rider Know i am deaf</string>
+    <string name="registration_certificate">Registration Certificate</string>
+    <string name="registration_number">Registration number</string>
+    <string name="insurance_certificate">Insurance Certificate</string>
+    <string name="certificate_of_inspect">Certificate of Inspect</string>
+    <string name="you_re_friends_on_facebook">You\'re friends on facebook</string>
+    <string-array name="Country">
+        <item>Australia</item>
+        <item>Australia</item>
+        <item>Australia</item>
+        <item>Australia</item>
+        <item>Australia</item>
+        <item>Australia</item>
+    </string-array>
+    <string-array name="states">
+        <item>New South Wales</item>
+        <item>Queensland</item>
+        <item>South Australia</item>
+        <item>Tasmania</item>
+        <item>Victoria</item>
+        <item>Western Australia</item>
+    </string-array>
+    <string-array name="city">
+        <item>Sydney</item>
+        <item>Melbourne</item>
+    </string-array>
+    <string-array name="driving_licence">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="stepperarray">
+        <item>Packages in Prepration</item>
+        <item>Departure of the Parcle</item>
+        <item>Delivery in Progress</item>
+        <item>Delivered</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TruckModule.Activity.Fragment.MyDocumentFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include
+            android:id="@+id/include"
+            layout="@layout/topbar1"
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/include"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/lay_search_list_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:background="@drawable/right_round_bg"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.7"
+                        android:paddingHorizontal="@dimen/space10"
+                        android:paddingVertical="@dimen/space10">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/space24"
+                                android:layout_height="24dp"
+                                android:id="@+id/img_primary_doc"
+                                android:visibility="visible"
+                                android:layout_marginHorizontal="@dimen/space2"
+                                android:src="@drawable/ic_alphabet"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/txt_primary_doc"
+                                android:layout_toRightOf="@id/img_primary_doc"
+                                android:layout_marginHorizontal="@dimen/space10"
+                                android:textSize="@dimen/text16"
+                                android:gravity="center_vertical"
+                                android:text="@string/primary_document"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_bg"
+                            android:layout_alignParentRight="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginVertical="@dimen/space10"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:background="@drawable/headings_round"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                android:padding="@dimen/space15"-->
+                <!--                android:id="@+id/lay_search_list_view">-->
+
+                <!--                <TextView-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:layout_marginHorizontal="@dimen/space10"-->
+                <!--                    android:id="@+id/item_title"-->
+                <!--                    android:textSize="@dimen/text16"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="@string/primary_document"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:background="@drawable/round_bg"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:paddingHorizontal="@dimen/space10"-->
+                <!--                    android:src="@drawable/ic_baseline_arrow_forward_24" />-->
+                <!--            </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/driving_licence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_50_points"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:textSize="@dimen/text8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:padding="@dimen/space10"
+                        android:id="@+id/lay_licence"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:id="@+id/txt_licence"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/passport"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_50_points"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:textSize="@dimen/text8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:padding="@dimen/space10"
+                        android:id="@+id/lay_passport"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:id="@+id/txt_passport"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_update"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:background="@drawable/right_round_bg"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.7"
+                        android:paddingHorizontal="@dimen/space10"
+                        android:paddingVertical="@dimen/space10">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/space24"
+                                android:layout_height="@dimen/space24"
+                                android:id="@+id/img_setting"
+                                android:visibility="visible"
+                                android:layout_marginHorizontal="@dimen/space2"
+                                android:src="@drawable/ic_article"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/txt_settings"
+                                android:layout_toRightOf="@id/img_setting"
+                                android:layout_marginHorizontal="@dimen/space10"
+                                android:textSize="@dimen/text16"
+                                android:gravity="center_vertical"
+                                android:text="@string/secondary_document"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_bg"
+                            android:layout_alignParentRight="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginVertical="@dimen/space10"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:background="@drawable/headings_round"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                android:padding="@dimen/space15"-->
+                <!--                android:id="@+id/lay_secondary_doc"-->
+                <!--               >-->
+
+                <!--                <TextView-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:layout_marginHorizontal="@dimen/space10"-->
+                <!--                    android:textSize="@dimen/text16"-->
+                <!--                    android:id="@+id/txt_sec_doc"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="@string/secondary_document"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/round_bg"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:paddingHorizontal="@dimen/space10"-->
+                <!--                    android:src="@drawable/ic_baseline_arrow_forward_24" />-->
+                <!--            </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/certificate_of_australian_citizenship"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_25_points"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:textSize="@dimen/text8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:padding="@dimen/space10"
+                        android:id="@+id/lay_certificate"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_certificate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawablePadding="@dimen/space10"
+                            android:drawableTint="@color/black"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12" />
+                    </LinearLayout>
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_margin="@dimen/space5"-->
+                    <!--                    android:orientation="horizontal">-->
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:text="International Driving Licence"/>-->
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="(50 Points)"-->
+                    <!--                        android:layout_marginHorizontal="@dimen/space5"-->
+                    <!--                        android:textSize="@dimen/text8"/>-->
+                    <!--                </LinearLayout>-->
+                    <!--                    <EditText-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_margin="@dimen/space5"-->
+                    <!--                        android:hint="Omninos Solution"-->
+                    <!--                        android:padding="@dimen/space12"-->
+                    <!--                        android:background="@drawable/reg_ed_bg"-->
+                    <!--                        android:textSize="@dimen/text12"-->
+                    <!--                        android:drawablePadding="@dimen/space10"-->
+                    <!--                        android:gravity="center_vertical"/>-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/australian_visa"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_25_points"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:textSize="@dimen/text8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:id="@+id/lay_visa"
+                        android:padding="@dimen/space10"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:id="@+id/txt_visa"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/proof_of_residence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_25_points"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:textSize="@dimen/text8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:id="@+id/lay_residence"
+                        android:padding="@dimen/space10"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:id="@+id/txt_residence"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/medicare_card"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_25_points"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:textSize="@dimen/text8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:id="@+id/lay_medicare"
+                        android:padding="@dimen/space10"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:id="@+id/txt_medicare"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/bank_card"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_25_points"
+                            android:layout_marginHorizontal="@dimen/space5"
+                            android:textSize="@dimen/text8"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:padding="@dimen/space10"
+                        android:id="@+id/lay_bank_card"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:hint="@string/attach_your_document"
+                            android:id="@+id/txt_bank_card"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginVertical="@dimen/space10"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:background="@drawable/headings_round"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                android:padding="@dimen/space15"-->
+                <!--                android:id="@+id/lay_required_doc">-->
+
+                <!--                <TextView-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:textSize="@dimen/text16"-->
+                <!--                    android:layout_marginHorizontal="@dimen/space10"-->
+                <!--                    android:id="@+id/txt_require_doc"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="@string/required_document"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/round_bg"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:paddingHorizontal="@dimen/space10"-->
+                <!--                    android:src="@drawable/ic_baseline_arrow_forward_24" />-->
+                <!--            </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/lay_required_doc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:background="@drawable/right_round_bg"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.7"
+                        android:paddingHorizontal="@dimen/space10"
+                        android:paddingVertical="@dimen/space10">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/space24"
+                                android:layout_height="@dimen/space24"
+                                android:id="@+id/img_req_doc"
+                                android:visibility="visible"
+                                android:layout_marginHorizontal="@dimen/space2"
+                                android:src="@drawable/ic_criminal_record"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/txt_req_doc"
+                                android:layout_toRightOf="@id/img_req_doc"
+                                android:layout_marginHorizontal="@dimen/space10"
+                                android:textSize="@dimen/text16"
+                                android:gravity="center_vertical"
+                                android:text="@string/required_document"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_bg"
+                            android:layout_alignParentRight="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/fedral_police_check"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:padding="@dimen/space10"
+                        android:id="@+id/lay_fedral_check"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:id="@+id/txt_fedral"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/lay_super_driver"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/space10"
+                        android:background="@drawable/right_round_bg"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.7"
+                        android:paddingHorizontal="@dimen/space10"
+                        android:paddingVertical="@dimen/space10">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="@dimen/space24"
+                                android:layout_height="@dimen/space24"
+                                android:id="@+id/img_super_driver"
+                                android:visibility="visible"
+                                android:layout_marginHorizontal="@dimen/space2"
+                                android:src="@drawable/ic_driving_license"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/txt_superdriver"
+                                android:layout_toRightOf="@id/img_super_driver"
+                                android:layout_marginLeft="@dimen/space10"
+                                android:layout_marginRight="@dimen/space20"
+                                android:textSize="@dimen/text14"
+                                android:gravity="center_vertical"
+                                android:text="@string/to_become_super_driver"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_bg"
+                            android:layout_alignParentRight="true"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginVertical="@dimen/space10"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:background="@drawable/headings_round"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                android:padding="@dimen/space15"-->
+                <!--                android:id="@+id/lay_super_driver">-->
+
+                <!--                <TextView-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:textSize="@dimen/text16"-->
+                <!--                    android:layout_marginHorizontal="@dimen/space10"-->
+                <!--                    android:id="@+id/txt_super_driver"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="@string/to_become_super_driver"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/round_bg"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:paddingHorizontal="@dimen/space10"-->
+                <!--                    android:src="@drawable/ic_baseline_arrow_forward_24" />-->
+                <!--            </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space10"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/driving_history"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reg_ed_bg"
+                        android:layout_margin="@dimen/space5"
+                        android:padding="@dimen/space10"
+                        android:id="@+id/lay_driving_history"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/space5"
+                            android:id="@+id/txt_driving_history"
+                            android:hint="@string/attach_your_document"
+                            android:textSize="@dimen/text12"
+                            android:singleLine="true"
+                            android:drawableRight="@drawable/ic_baseline_attach_file_24"
+                            android:drawableTint="@color/black"
+                            android:drawablePadding="@dimen/space10"
+                            android:gravity="center_vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:id="@+id/btn_submit"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="@dimen/space40"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomsheet_bg"
+        android:elevation="@dimen/space5"
+        android:id="@+id/bottomsheet"
+        android:fitsSystemWindows="true"
+        app:behavior_hideable="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space30"
+        android:layout_marginRight="@dimen/space30"
+        app:behavior_peekHeight="@dimen/space0"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/space100"
+                android:layout_height="@dimen/space100"
+                android:src="@drawable/ic_evaluation"
+                android:layout_margin="@dimen/space20"
+                android:layout_gravity="center"
+                app:tint="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_documents_has_been_submitted_n_you_will_get_confirmation_within_48_hours"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/sp_14"
+                android:layout_margin="@dimen/space10"
+                android:textColor="@color/black"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:id="@+id/btn_done"
+                android:background="@drawable/button_account_bg"
+                android:layout_marginVertical="@dimen/space30"
+                android:layout_marginHorizontal="@dimen/space50"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="?actionBarSize">
+
+    <ImageView
+        android:id="@+id/back_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text18"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/space5"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:id="@+id/trip_check_switch"/>
+
+    <ImageView
+        android:id="@+id/edit"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pencil"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+
+
+    <ImageView
+        android:id="@+id/done"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_checked"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/help"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_question"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        app:tint="@color/white" />
+</RelativeLayout>

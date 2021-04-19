@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TruckModule.Activity.Fragment.ProfileFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/topbar_nav_home" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space30"
+                android:layout_marginRight="@dimen/space30"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="@dimen/space150"
+                        android:layout_height="@dimen/space150"
+                        android:layout_marginTop="@dimen/space20"
+                        android:src="@drawable/userpic"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgProf"
+                        android:layout_width="@dimen/space50"
+                        android:layout_height="@dimen/space50"
+                        android:layout_marginRight="@dimen/space5"
+                        android:src="@drawable/blue_circle"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp"
+                        app:layout_constraintBottom_toBottomOf="@id/imgProfile"
+                        app:layout_constraintRight_toRightOf="@id/imgProfile" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_camera_alt_24"
+                        app:layout_constraintBottom_toBottomOf="@id/imgProf"
+                        app:layout_constraintLeft_toLeftOf="@id/imgProf"
+                        app:layout_constraintRight_toRightOf="@id/imgProf"
+                        app:layout_constraintTop_toTopOf="@id/imgProf" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="Full Name" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:drawableStart="@drawable/ic_user"
+                        android:drawablePadding="@dimen/space10"
+                        android:drawableTint="@color/skyblue"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginRight="@dimen/space15"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        android:tint="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/skyblue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space15"
+                    android:text="Company Name" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:drawableStart="@drawable/ic_building"
+                        android:drawablePadding="@dimen/space10"
+                        android:drawableTint="@color/skyblue"
+                        android:hint="Company Name"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginRight="@dimen/space15"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        android:tint="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/skyblue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space15"
+                    android:text="Phone Number" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:drawableStart="@drawable/ic_call"
+                        android:drawablePadding="@dimen/space10"
+                        android:drawableTint="@color/skyblue"
+                        android:hint="Phone Number"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginRight="@dimen/space15"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        android:tint="@color/skyblue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space15"
+                    android:text="City" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:drawableStart="@drawable/ic_office_building"
+                        android:drawablePadding="@dimen/space10"
+                        android:drawableTint="@color/skyblue"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginRight="@dimen/space15"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        android:tint="@color/skyblue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space15"
+                    android:text="State" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:drawableStart="@drawable/ic_office_building"
+                        android:drawablePadding="@dimen/space10"
+                        android:drawableTint="@color/skyblue"
+                        android:hint="State"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+
+                        android:paddingBottom="@dimen/space10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginRight="@dimen/space15"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        android:tint="@color/skyblue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space15"
+                    android:text="Email Address" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/edt_back"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="@dimen/space10"
+                        android:drawableTint="@color/skyblue"
+                        android:hint="Email Address"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/space15"
+                        android:paddingTop="@dimen/space10"
+                        android:paddingBottom="@dimen/space10"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginRight="@dimen/space15"
+                        android:src="@drawable/ic_baseline_edit_24"
+                        android:tint="@color/skyblue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space20"
+                    android:background="@drawable/edt_back"
+                    android:text="Change Password" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/textWhitGray16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/space20"
+                    android:background="@drawable/btn_bac"
+                    android:text="Save" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

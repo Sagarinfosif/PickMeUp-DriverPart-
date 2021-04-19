@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.refertab.ReferToRideFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space250">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/invite_ride"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space20"
+                    android:gravity="center_horizontal"
+                    android:text="Refer riders and earn $10 per Referal(plus Bonuses)"
+                    android:textSize="@dimen/text16"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/space40"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="Share your code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:layout_marginTop="@dimen/space10"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="JAT0786"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text20"
+                android:layout_marginTop="@dimen/space5"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="Share My Referral Code"
+                android:id="@+id/refer_code"
+                android:padding="@dimen/space10"
+                android:background="@drawable/orange_back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text22"
+                android:layout_marginTop="@dimen/space5"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/circle_outlineing"
+                        android:padding="@dimen/space10"
+                        android:src="@drawable/ic_whatsapp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space20"
+                        android:gravity="center_horizontal"
+                        android:text="Whatsapp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        android:layout_marginTop="@dimen/space5" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/refer_fb"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/circle_outlineing"
+                        android:padding="@dimen/space10"
+                        android:src="@drawable/ic_facebook_1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space20"
+                        android:gravity="center_horizontal"
+                        android:text="Facebook"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        android:layout_marginTop="@dimen/space5" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/more_refer"
+                        android:layout_marginTop="@dimen/space10"
+                        android:background="@drawable/circle_outlineing"
+                        android:padding="@dimen/space10"
+                        android:src="@drawable/ic_more_options"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space20"
+                        android:gravity="center_horizontal"
+                        android:text="more"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text14"
+                        android:layout_marginTop="@dimen/space5" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space10"
+                android:background="@color/lightgrey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="Track Your Rewards"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:layout_marginTop="@dimen/space10"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="Get $10 when your referred rider completes their first trip"
+                android:textColor="@color/quantum_orange"
+                android:textSize="@dimen/text14"
+                android:layout_marginTop="@dimen/space10"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="Complete the below referrals missions for bonus rewards"
+                android:textColor="@color/quantum_orange"
+                android:textSize="@dimen/text14"
+                android:textStyle="bold"/>
+
+            <com.badoualy.stepperindicator.StepperIndicator
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginVertical="@dimen/space10"
+                android:layout_height="wrap_content"
+                app:stpi_stepCount="5"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space10"
+                android:background="@color/lightgrey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:gravity="center_horizontal"
+                android:text="How It Works"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text16"
+                android:layout_marginVertical="@dimen/space20"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/space40"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/refer_img"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/space40"
+                    android:src="@drawable/refer1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_toRightOf="@+id/refer_img"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share Your Referral Code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Offer is valid until 31/01/2021"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text12"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/space40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/refer_img1"
+                    android:layout_height="@dimen/space40"
+                    android:src="@drawable/refer2"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_toRightOf="@+id/refer_img1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Invite Your Friends to Ride with Drive"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yours referral code or link will be used by riders to redeem ride vouchers"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text12"
+                       />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/space40"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/refer_img2"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/space40"
+                    android:src="@drawable/refer3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_toRightOf="@+id/refer_img2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Receive Your Rewards"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="After your rider friends complete a trip in All in 14 days of being reffered"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text12" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TruckModule.Activity.Fragment.MyWalletFragment">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/topbar1" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space20"
+                android:text="Reference#" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space10"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC12345"
+                    android:textColor="@color/skyblue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="372lbs"
+                    android:textColor="@color/skyblue" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textGrayText15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space15"
+                android:text="Invoice Date : 03/06/2020" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payer Name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="john A." />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accounting Document" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="800001000" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipment Status" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Shipment Complete"
+                    android:textColor="@color/skyblue" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:layout_marginTop="@dimen/space20"
+                android:background="@color/lightGray" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space20"
+                android:layout_marginTop="@dimen/space20">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCircle"
+                    android:layout_width="@dimen/space15"
+                    android:layout_height="@dimen/space15"
+                    android:src="@drawable/ic_dry_clean"
+                    app:layout_constraintBottom_toBottomOf="@id/txtCurrent"
+                    app:layout_constraintRight_toLeftOf="@id/txtCurrent"
+                    app:layout_constraintTop_toTopOf="@id/txtCurrent"
+
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    app:layout_constraintLeft_toLeftOf="@id/imgCircle"
+                    app:layout_constraintRight_toRightOf="@id/imgCircle"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCircle2"
+                    app:layout_constraintTop_toBottomOf="@id/imgCircle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCurrent"
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space5"
+                    android:text="@string/_17_modern_street_suburb_state"
+                    app:layout_constraintLeft_toRightOf="@id/imgCircle"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAddress"
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_pin"
+                    android:drawablePadding="@dimen/space5"
+                    android:drawableTint="@color/skyblue"
+                    android:gravity="center_vertical"
+                    android:text="Cambridge OH 12345"
+                    android:textColor="@color/lightGray"
+                    app:layout_constraintLeft_toLeftOf="@id/txtCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/txtCurrent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDate"
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_calendar__1_"
+                    android:drawablePadding="@dimen/space5"
+                    android:drawableTint="@color/skyblue"
+                    android:gravity="center_vertical"
+                    android:text="Tus, Feb 11 2021"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/lightGray"
+                    app:layout_constraintLeft_toRightOf="@id/txtAddress"
+                    app:layout_constraintTop_toTopOf="@id/txtAddress" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDestination"
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space5"
+                    android:layout_marginTop="@dimen/space20"
+                    android:text="@string/_17_modern_street_suburb_state"
+                    app:layout_constraintLeft_toRightOf="@id/imgCircle2"
+                    app:layout_constraintTop_toBottomOf="@id/txtAddress" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCircle2"
+                    android:layout_width="@dimen/space15"
+                    android:layout_height="@dimen/space15"
+                    android:src="@drawable/ic_dry_clean"
+                    app:layout_constraintBottom_toBottomOf="@id/txtDestination"
+                    app:layout_constraintRight_toLeftOf="@id/txtDestination"
+                    app:layout_constraintTop_toTopOf="@id/txtDestination"
+
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDesAddress"
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_pin"
+                    android:drawablePadding="@dimen/space5"
+                    android:drawableTint="@color/skyblue"
+                    android:gravity="center_vertical"
+                    android:text="Cambridge OH 12345"
+                    android:textColor="@color/lightGray"
+                    app:layout_constraintLeft_toLeftOf="@id/txtCurrent"
+                    app:layout_constraintTop_toBottomOf="@id/txtDestination" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDesDate"
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_calendar__1_"
+                    android:drawablePadding="@dimen/space5"
+                    android:drawableTint="@color/skyblue"
+                    android:gravity="center_vertical"
+                    android:text="Tus, Feb 11 2021"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/lightGray"
+                    app:layout_constraintLeft_toRightOf="@id/txtDesAddress"
+                    app:layout_constraintTop_toTopOf="@id/txtDesAddress" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space1"
+                android:layout_marginTop="@dimen/space20"
+                android:background="@color/lightGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/space20"
+                android:layout_marginHorizontal="@dimen/space20"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Billing Quantity" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="$375" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_marginHorizontal="@dimen/space20"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax Value" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0.00" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_marginHorizontal="@dimen/space20"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textBalck14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net Value" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textGrayText15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="$375" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancel"
+        style="@style/textWhitGray16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bac"
+        android:layout_marginHorizontal="@dimen/space20"
+        android:text="Download Invoice"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

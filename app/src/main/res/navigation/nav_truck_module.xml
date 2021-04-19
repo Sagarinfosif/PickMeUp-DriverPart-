@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_truck_module"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_homeFragment2_to_currentShipmentFragment"
+            app:destination="@id/currentShipmentFragment"
+            app:popUpTo="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_myWalletFragment"
+            app:destination="@id/myWalletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentShipmentFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.CurrentShipmentFragment"
+        android:label="fragment_current_shipment"
+        tools:layout="@layout/fragment_current_shipment" >
+        <action
+            android:id="@+id/action_currentShipmentFragment_to_shipmentdetailFragment"
+            app:destination="@id/shipmentdetailFragment"
+            app:popUpTo="@id/currentShipmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipmentdetailFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ShipmentdetailFragment"
+        android:label="fragment_shipmentdetail"
+        tools:layout="@layout/fragment_shipmentdetail" />
+    <fragment
+        android:id="@+id/myWalletFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.MyWalletFragment"
+        android:label="fragment_my_wallet"
+        tools:layout="@layout/fragment_my_wallet" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ProfileFragment"
+        android:label="fragment_profile2"
+        tools:layout="@layout/fragment_profile2" >
+        <action
+            android:id="@+id/action_profileFragment2_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.FeedbackFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/termsConditionFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.TermsConditionFragment"
+        android:label="fragment_terms_condition"
+        tools:layout="@layout/fragment_terms_condition" />
+    <fragment
+        android:id="@+id/manualRideFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ManualRideFragment"
+        android:label="fragment_manual_ride"
+        tools:layout="@layout/fragment_manual_ride" >
+        <action
+            android:id="@+id/action_manualRideFragment_to_manualRideMapFragment"
+            app:destination="@id/manualRideMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/referEarnFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ReferEarnFragment"
+        android:label="fragment_refer_earn"
+        tools:layout="@layout/fragment_refer_earn" />
+    <fragment
+        android:id="@+id/manualRideMapFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ManualRideMapFragment"
+        android:label="fragment_manual_ride_map"
+        tools:layout="@layout/fragment_manual_ride_map" />
+    <fragment
+        android:id="@+id/myVehiclesFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.MyVehiclesFragment"
+        android:label="fragment_my_vehicles"
+        tools:layout="@layout/fragment_my_vehicles" >
+        <action
+            android:id="@+id/action_myVehiclesFragment_to_vehiclesDetailFragment"
+            app:destination="@id/vehiclesDetailFragment" />
+        <action
+            android:id="@+id/action_myVehiclesFragment_to_addVehiclesFragment"
+            app:destination="@id/addVehiclesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehiclesDetailFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.VehiclesDetailFragment"
+        android:label="fragment_add_vehicles"
+        tools:layout="@layout/fragment_add_vehicles" >
+        <action
+            android:id="@+id/action_vehiclesDetailFragment_to_myVehiclesFragment"
+            app:destination="@id/myVehiclesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVehiclesFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.AddVehiclesFragment"
+        android:label="fragment_add_vehicles2"
+        tools:layout="@layout/fragment_add_vehicles2" >
+        <action
+            android:id="@+id/action_addVehiclesFragment_to_addVehiclesDetailFragment"
+            app:destination="@id/addVehiclesDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVehiclesDetailFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.AddVehiclesDetailFragment"
+        android:label="fragment_add_vehicles_detail"
+        tools:layout="@layout/fragment_add_vehicles_detail" >
+        <action
+            android:id="@+id/action_addVehiclesDetailFragment_to_vehiclesDetailFragment"
+            app:destination="@id/vehiclesDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myDocumentFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.MyDocumentFragment"
+        android:label="fragment_my_document"
+        tools:layout="@layout/fragment_my_document" />
+    <fragment
+        android:id="@+id/myDeliveriesFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.MyDeliveriesFragment"
+        android:label="fragment_my_deliveries"
+        tools:layout="@layout/fragment_my_deliveries" >
+        <action
+            android:id="@+id/action_myDeliveriesFragment_to_myJobDetailFragment"
+            app:destination="@id/myJobDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myJobDetailFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.MyJobDetailFragment"
+        android:label="fragment_my_job_detail"
+        tools:layout="@layout/fragment_my_job_detail" />
+    <fragment
+        android:id="@+id/myBidsFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.MyBidsFragment"
+        android:label="fragment_my_bids"
+        tools:layout="@layout/fragment_my_bids" >
+        <action
+            android:id="@+id/action_myBidsFragment_to_myJobDetailFragment"
+            app:destination="@id/myJobDetailFragment" />
+        <action
+            android:id="@+id/action_myBidsFragment_to_inProgressBidFragment"
+            app:destination="@id/inProgressBidFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inProgressBidFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.InProgressBidFragment"
+        android:label="fragment_in_progress_bid"
+        tools:layout="@layout/fragment_in_progress_bid" />
+    <fragment
+        android:id="@+id/helpFragment2"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.HelpFragment"
+        android:label="fragment_help2"
+        tools:layout="@layout/fragment_help2" />
+    <fragment
+        android:id="@+id/settingFragment3"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.SettingFragment"
+        android:label="fragment_setting2"
+        tools:layout="@layout/fragment_setting2" >
+        <action
+            android:id="@+id/action_settingFragment3_to_navigationFragment2"
+            app:destination="@id/navigationFragment2" />
+        <action
+            android:id="@+id/action_settingFragment3_to_appSoundFragment"
+            app:destination="@id/appSoundFragment" />
+        <action
+            android:id="@+id/action_settingFragment3_to_accessibilityFragment"
+            app:destination="@id/accessibilityFragment" />
+        <action
+            android:id="@+id/action_settingFragment3_to_screenModeFragment"
+            app:destination="@id/screenModeFragment" />
+        <action
+            android:id="@+id/action_settingFragment3_to_authenticationFragment"
+            app:destination="@id/authenticationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationFragment2"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.NavigationFragment"
+        android:label="fragment_navigation2"
+        tools:layout="@layout/fragment_navigation2" />
+    <fragment
+        android:id="@+id/appSoundFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.AppSoundFragment"
+        android:label="fragment_app_sound"
+        tools:layout="@layout/fragment_app_sound" />
+    <fragment
+        android:id="@+id/accessibilityFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.AccessibilityFragment"
+        android:label="fragment_accessibility"
+        tools:layout="@layout/fragment_accessibility" />
+    <fragment
+        android:id="@+id/screenModeFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.ScreenModeFragment"
+        android:label="fragment_screen_mode"
+        tools:layout="@layout/fragment_screen_mode" />
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.drive.pickmeup.TruckModule.Activity.Fragment.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" />
+</navigation>
